@@ -36,6 +36,7 @@
             display: none;
             font-size: 48px;
             color: pink;
+            text-align: center;
         }
 
         .heart {
@@ -64,6 +65,28 @@
             bottom: 10px;
             font-size: 18px;
             color: pink;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .button {
+                padding: 15px 30px;
+                font-size: 20px;
+            }
+
+            .message {
+                font-size: 36px;
+            }
+
+            .heart {
+                width: 15px;
+                height: 15px;
+            }
+
+            footer {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -71,7 +94,7 @@
     <button class="button" id="clickButton">LÜTFEN BANA TIKLAR MISIN?</button>
     <div class="message" id="message">ÇOK TATLISIN ^^</div>
     
-    <footer>UUR'DAN SANA :)</footer>
+    <footer>UUR'DAN SANA <3</footer>
 
     <script>
         const button = document.getElementById('clickButton');
